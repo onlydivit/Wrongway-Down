@@ -1,0 +1,8 @@
+{
+  "id": "two_keys", "title": "Two Keys", "difficulty": "09 / COMBINE",
+  "hint": "The gate needs A AND B. Use the ceiling checkpoint between the two patrols.",
+  "spawn": [130, 578, 1], "exit": [1020, 532, 1],
+  "walls": [], "spikes": [[240, 100, 1], [430, 100, -1], [620, 100, 1], [810, 100, -1]],
+  "checkpoints": [[570, -1]], "hazards": [[290, 180, 580, 5.0, 0.3, 17], [680, 180, 580, 5.5, 0.0, 17]],
+  "switches": [["A", 380, 1], ["B", 760, 1]], "gates": [[960, ["A", "B"]]]
+}

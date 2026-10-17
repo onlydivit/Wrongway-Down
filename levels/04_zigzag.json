@@ -1,0 +1,6 @@
+{
+  "id": "zigzag", "title": "Zigzag", "difficulty": "04 / PRACTICE",
+  "hint": "Three crossings. Stop in the gaps, then choose your next surface.",
+  "spawn": [130, 578, 1], "exit": [1020, 160, -1],
+  "walls": [], "spikes": [[250, 125, 1], [500, 125, -1], [750, 125, 1]], "checkpoints": [[450, 1]], "hazards": [], "switches": [], "gates": []
+}

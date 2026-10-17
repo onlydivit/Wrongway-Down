@@ -1,49 +1,78 @@
 # Wrongway Down
 
-A Godot 4.6 desktop puzzle-platformer prototype. Flip between floor and ceiling, read your landing, and reach the mint exit. This is the first playable milestone, not the finished six-level game.
+A Godot 4.6 gravity-flipping puzzle platformer. Chapter 01: Foundations contains ten progressively more demanding rooms, from safe flips to moving patrols and switch-controlled gates. The difficulty leaves room for more advanced chapters later.
 
-## Run
+## Play
 
-Import `project.godot` in Godot 4.6 and press **F6** on `scenes/test_room.tscn`, or **F5** to run the project. Choose **Enter the lab**. The complete room fits on screen; resize the window freely.
+Open project.godot in Godot 4.6 and press F5. Choose Play or Continue. Choose Level shows unlocked and completed rooms; completing a room unlocks the next. Replaying does not erase progress.
 
 | Input | Action |
 | --- | --- |
 | A / D or left / right | Move |
-| Space | Reverse gravity while touching the floor or ceiling |
-| R | Restart the room and clear its checkpoint |
-| Escape | Pause / resume |
+| Space | Flip from a supporting surface |
+| R | Restart current room; reset checkpoint and switches |
+| Escape | Pause/resume; leave level selection |
+| Arrow keys + Enter, or mouse | Navigate menus |
 
-There is no jump and no midair flip. Touch pink spikes to respawn. The amber flag saves a safe floor spawn and turns mint when active. The exit opens a completion menu with replay. Menus support mouse and keyboard navigation.
+There is no jump or midair flip. Pink spikes and patrols cause respawn. Amber flags save position and gravity. Violet lettered switches open matching gates; every listed letter is required. Switches stay active after death but reset on restart. Mint doors complete rooms.
 
-## Implemented
+## Campaign
 
-- Fixed-timestep CharacterBody2D movement, acceleration, bounded gravity, surface-relative grounded checks, and animated orientation.
-- Reusable player and area-object scenes; a single test room with solid boundaries, floor and ceiling spikes, checkpoint, and exit.
-- Start, pause, restart, completion, and replay flow; tutorial labels; flip, landing, checkpoint and death feedback with generated sound effects.
-- A compatibility renderer and 1152 × 720 stretchable viewport.
+1. First Flip: safe introduction and ceiling exit.
+2. Safe Landing: first spikes and a forgiving ceiling route.
+3. Both Sides: plan a return to the floor.
+4. Zigzag: three alternating crossings.
+5. Headroom: solid blocks and route reading.
+6. Take Your Time: first moving patrol.
+7. Permission: switch-controlled gate.
+8. Upper Ground: four crossings and a ceiling checkpoint.
+9. Two Keys: two switches and two patrols.
+10. Field Exam: combine the chapter's mechanics.
 
-## Layout and system
+Movement speed stays constant; difficulty grows through routing and combinations. There is no time limit. Human playtesting is still needed to confirm the intended curve.
 
-`scripts/player.gd` owns motion and changes `up_direction` when reversing gravity, allowing Godot's floor detection to work on the ceiling. A flip is allowed only when `is_on_floor()` is true. Respawn resets velocity, gravity, visual orientation and briefly settles collision contacts before allowing another flip.
+## Documentation and extension
 
-`scripts/object.gd` supplies spike, checkpoint and exit Area2D triggers. `scripts/test_room.gd` assembles the room, owns the checkpoint and menus, and synthesizes short sound effects. All distances are pixels; physics uses delta time. A fixed camera is intentional because the entire route is visible.
+- [LEVEL_AUTHORING.md](docs/LEVEL_AUTHORING.md): exact data schema and how to add room 11 onward.
+- [DESIGN.md](docs/DESIGN.md): current scope and human playtest checklist.
+- [VALIDATION.md](docs/VALIDATION.md): recorded checks and remaining validation.
 
-## Next milestones
+Each room has a JSON file in levels/. Append its path to levels/campaign.json to extend the game. Menus, counts, unlocks and ending detection derive from the manifest. Completed stable IDs survive content additions; preserve IDs when changing titles or layouts. An appended room 11 unlocks for someone who has completed room 10.
 
-1. Playtest the ground-only flip rule and the first room with new players.
-2. Add separate level resources and five additional rooms: Safe Landing, Narrow Passage, Timing, The Gate, Final Test.
-3. Add moving hazards, then switches and doors. Consider moving platforms only after the core feels reliable.
-4. Add progress saving, level selection, audio settings, reduced-shake option, music, and desktop export presets/templates.
-5. Validate an exported build, record gameplay, and document real playtest changes for the portfolio.
+## Runtime files
 
-There is currently no music, screen shake, persistent progress, export, or six-level campaign. See `docs/DESIGN.md` for scope and playtest checks.
+| File | Responsibility |
+| --- | --- |
+| scenes/test_room.tscn | Campaign entry scene; original path retained |
+| scripts/campaign.gd | Navigation, HUD, respawning and game flow |
+| scripts/level_catalog.gd | Manifest loading and structural validation |
+| scripts/level.gd | Build geometry, objects and gate connections |
+| scenes/player.tscn + scripts/player.gd | Character collision and gravity movement |
+| scenes/object.tscn + scripts/object.gd | Spikes, checkpoint, exit and switch contacts |
+| scripts/moving_hazard.gd | Patrol movement and collision |
+| scripts/progress.gd | Save/load and stable-ID unlocks |
+| scripts/game_audio.gd | Synthesized feedback tones |
+| ui/campaign_menu.gd | Main, pause, level selection and completion controls |
+| tests/smoke.gd | Automated route and state checks |
 
-## Validation
+## Saves
 
-`godot --headless --path . --script res://tests/smoke.gd` runs the gameplay smoke test. Append `--max-fps 30` before `--script` to check low rendering frame rates. Run without `--headless` and append `-- --capture` to save `tests/room-preview.png`.
+Completed IDs are stored in user://campaign.cfg, in Godot's application-data directory for Wrongway Down. Checkpoints and switches are session-local. A missing/unreadable save starts fresh. Save-write errors are shown at completion; unlocks still work for that session.
 
-Verified with Godot 4.6.3: all 14 checks passed in a rendered run and a headless run capped at 30 FPS. Checks cover the complete route, grounded and airborne flip rules, ceiling support, checkpoint and initial-spawn deaths, pause, replay, wall collision, and corner flipping. The rendered room screenshot was visually inspected. Human playtesting, 144 FPS checks, and exported-build validation remain outstanding.
+## Run checks
 
-## Assets
+With Godot on your PATH:
 
-All in-game graphics are original procedural shapes drawn by this project. Sound effects are original synthesized sine tones. No external art, audio or fonts were downloaded. The editor-generated Godot icon is retained as the project icon. Folders `art/` and `audio/` are reserved for future assets; menus currently live in the room script.
+```powershell
+godot --headless --path . --editor --import --quit
+godot --headless --path . --fixed-fps 60 --script res://tests/smoke.gd
+godot --path . --fixed-fps 60 --script res://tests/smoke.gd -- --capture
+```
+
+On Windows, use the full path to Godot_v4.6.3-stable_win64_console.exe if needed. Tests use a separate campaign-test.cfg save and delete only that file. Routes use actual movement/flip inputs; isolated collision tests also reposition the player. The capture option writes previews of rooms 1, 5, 10 and level selection into tests/.
+
+## Assets and remaining scope
+
+Graphics are original procedural shapes; effects use original synthesized tones. No external art, music or fonts were downloaded. The editor-generated Godot icon remains. art/ and audio/ are reserved for future assets.
+
+Music/audio settings, control remapping, controller support, moving platforms, later chapters and exported builds remain future work. When exporting, include *.json in the preset's non-resource filter to package the level data.

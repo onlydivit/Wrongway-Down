@@ -1,0 +1,7 @@
+{
+  "id": "permission", "title": "Permission", "difficulty": "07 / CONNECT",
+  "hint": "Touch switch A to open gate A. Activated switches stay on after a death.",
+  "spawn": [130, 578, 1], "exit": [1020, 160, -1],
+  "walls": [[750, 460, 100, 140]], "spikes": [[250, 125, 1], [500, 125, -1]],
+  "checkpoints": [[450, 1]], "hazards": [[330, 180, 580, 5.5, 0.2, 17]], "switches": [["A", 405, -1]], "gates": [[940, ["A"]]]
+}

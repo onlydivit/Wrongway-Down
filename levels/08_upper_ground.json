@@ -1,0 +1,7 @@
+{
+  "id": "upper_ground", "title": "Upper Ground", "difficulty": "08 / CONNECT",
+  "hint": "The ceiling checkpoint remembers UP gravity. Four flips lead to the floor exit.",
+  "spawn": [130, 578, 1], "exit": [1020, 532, 1],
+  "walls": [], "spikes": [[240, 100, 1], [430, 100, -1], [620, 100, 1], [810, 100, -1]],
+  "checkpoints": [[570, -1]], "hazards": [[680, 180, 580, 5.5, 0.25, 17]], "switches": [["A", 380, 1]], "gates": [[960, ["A"]]]
+}

@@ -1,0 +1,6 @@
+{
+  "id": "first_flip", "title": "First Flip", "difficulty": "01 / LEARN",
+  "hint": "A / D to move. Space flips from a surface. The exit is on the ceiling.",
+  "spawn": [130, 578, 1], "exit": [1020, 160, -1],
+  "walls": [[450, 470, 70, 130]], "spikes": [], "checkpoints": [], "hazards": [], "switches": [], "gates": []
+}

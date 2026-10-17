@@ -1,0 +1,7 @@
+{
+  "id": "headroom", "title": "Headroom", "difficulty": "05 / ROUTE",
+  "hint": "Walls block a surface. Clear the whole block before flipping back.",
+  "spawn": [130, 578, 1], "exit": [1020, 160, -1],
+  "walls": [[250, 420, 100, 180], [500, 160, 100, 180], [750, 420, 100, 180]],
+  "spikes": [[375, 50, 1], [625, 50, -1]], "checkpoints": [[450, 1]], "hazards": [], "switches": [], "gates": []
+}

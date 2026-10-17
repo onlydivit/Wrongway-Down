@@ -1,0 +1,6 @@
+{
+  "id": "both_sides", "title": "Both Sides", "difficulty": "03 / PRACTICE",
+  "hint": "Look ahead before each flip. Amber flags save your surface and position.",
+  "spawn": [130, 578, 1], "exit": [1020, 532, 1],
+  "walls": [], "spikes": [[340, 150, 1], [650, 150, -1]], "checkpoints": [[560, 1]], "hazards": [], "switches": [], "gates": []
+}

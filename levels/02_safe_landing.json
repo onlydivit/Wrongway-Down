@@ -1,0 +1,6 @@
+{
+  "id": "safe_landing", "title": "Safe Landing", "difficulty": "02 / LEARN",
+  "hint": "Pink means danger. Flip before the spikes and follow the safe surface.",
+  "spawn": [130, 578, 1], "exit": [1020, 160, -1],
+  "walls": [], "spikes": [[340, 260, 1]], "checkpoints": [[720, -1]], "hazards": [], "switches": [], "gates": []
+}

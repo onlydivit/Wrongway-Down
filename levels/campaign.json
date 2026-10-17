@@ -1,0 +1,12 @@
+[
+  "res://levels/01_first_flip.json",
+  "res://levels/02_safe_landing.json",
+  "res://levels/03_both_sides.json",
+  "res://levels/04_zigzag.json",
+  "res://levels/05_headroom.json",
+  "res://levels/06_take_your_time.json",
+  "res://levels/07_permission.json",
+  "res://levels/08_upper_ground.json",
+  "res://levels/09_two_keys.json",
+  "res://levels/10_field_exam.json"
+]

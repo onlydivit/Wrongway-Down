@@ -1,3 +1,7 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
+
+# Local development notes (not published)
+/decsion.md
+/flow.md

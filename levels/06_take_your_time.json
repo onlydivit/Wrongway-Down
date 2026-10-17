@@ -1,0 +1,7 @@
+{
+  "id": "take_your_time", "title": "Take Your Time", "difficulty": "06 / TIMING",
+  "hint": "Watch the pink patrol line. Wait on safe ground, then pass as it moves away.",
+  "spawn": [130, 578, 1], "exit": [1020, 160, -1],
+  "walls": [[750, 460, 100, 140]], "spikes": [[250, 125, 1], [500, 125, -1]],
+  "checkpoints": [[450, 1]], "hazards": [[330, 180, 580, 5.5, 0.0, 17]], "switches": [], "gates": []
+}

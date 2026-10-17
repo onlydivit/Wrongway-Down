@@ -1,0 +1,9 @@
+{
+  "id": "field_exam", "title": "Field Exam", "difficulty": "10 / CHAPTER TEST",
+  "hint": "Read the walls, time the patrols, collect both switches. There is no time limit.",
+  "spawn": [130, 578, 1], "exit": [1040, 532, 1],
+  "walls": [[250, 460, 75, 140], [460, 160, 75, 140], [660, 460, 75, 140], [860, 160, 75, 140]],
+  "spikes": [[350, 25, 1], [550, 25, -1], [750, 25, 1], [950, 25, -1]],
+  "checkpoints": [[610, -1]], "hazards": [[330, 180, 580, 5.0, 0.1, 17], [710, 180, 580, 5.5, 0.35, 17]],
+  "switches": [["A", 410, 1], ["B", 610, -1]], "gates": [[1000, ["A", "B"]]]
+}
