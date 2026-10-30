@@ -1,0 +1,107 @@
+{
+  "id": "deep_focus",
+  "title": "Deep Focus",
+  "chapter": "MASTERY",
+  "reward": 480,
+  "difficulty": "39 / MASTERY",
+  "hint": "Shorter openings, faster patrols. Brake before a warning and commit to the next safe crossing.",
+  "spawn": [
+    130,
+    578,
+    1
+  ],
+  "exit": [
+    1040,
+    160,
+    -1
+  ],
+  "walls": [],
+  "spikes": [
+    [
+      212,
+      80,
+      1
+    ],
+    [
+      382,
+      80,
+      -1
+    ],
+    [
+      552,
+      80,
+      1
+    ],
+    [
+      722,
+      80,
+      -1
+    ],
+    [
+      892,
+      70,
+      1
+    ]
+  ],
+  "checkpoints": [
+    [
+      667,
+      1
+    ]
+  ],
+  "hazards": [
+    [
+      252,
+      180,
+      580,
+      2.7,
+      0.64,
+      17
+    ],
+    [
+      592,
+      180,
+      580,
+      2.95,
+      0.95,
+      17
+    ]
+  ],
+  "switches": [
+    [
+      "A",
+      327,
+      1
+    ],
+    [
+      "B",
+      667,
+      1
+    ]
+  ],
+  "gates": [
+    [
+      1005,
+      [
+        "A",
+        "B"
+      ]
+    ]
+  ],
+  "pulses": [
+    [
+      427,
+      1.74,
+      0.51,
+      1.66,
+      0.48
+    ],
+    [
+      960,
+      1.54,
+      0.51,
+      1.66,
+      0.76
+    ]
+  ]
+}

@@ -13,6 +13,7 @@ var gates: Array[Dictionary] = []
 var switches: Dictionary = {}
 var hazards: Array[MovingHazard] = []
 var checkpoint: RoomObject
+var pulses: Array[PulseBarrier] = []
 
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_PAUSABLE
@@ -44,6 +45,16 @@ func _ready() -> void:
 		add_child(hazard)
 		hazards.append(hazard)
 	_object(RoomObject.Kind.EXIT, Vector2(data.exit[0], data.exit[1]), Vector2(60, 68))
+	for item in data.get("pulses", []):
+		var pulse := PulseBarrier.new()
+		pulse.position.x = item[0]
+		pulse.safe_time = item[1]
+		pulse.warning_time = item[2]
+		pulse.active_time = item[3]
+		pulse.phase = item[4]
+		pulse.touched.connect(func(): danger.emit())
+		add_child(pulse)
+		pulses.append(pulse)
 
 func _body(rect: Rect2) -> StaticBody2D:
 	var body := StaticBody2D.new()

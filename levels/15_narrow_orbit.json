@@ -1,0 +1,94 @@
+{
+  "id": "narrow_orbit",
+  "title": "Narrow Orbit",
+  "chapter": "REFLEX",
+  "reward": 240,
+  "difficulty": "15 / REFLEX",
+  "hint": "React to the patrol, then cross the pulse while it reads PASS. Stop before READY.",
+  "spawn": [
+    130,
+    578,
+    1
+  ],
+  "exit": [
+    1040,
+    160,
+    -1
+  ],
+  "walls": [],
+  "spikes": [
+    [
+      220,
+      80,
+      1
+    ],
+    [
+      390,
+      80,
+      -1
+    ],
+    [
+      560,
+      80,
+      1
+    ],
+    [
+      730,
+      80,
+      -1
+    ],
+    [
+      900,
+      70,
+      1
+    ]
+  ],
+  "checkpoints": [
+    [
+      675,
+      1
+    ]
+  ],
+  "hazards": [
+    [
+      260,
+      180,
+      580,
+      4.5,
+      0.52,
+      17
+    ],
+    [
+      600,
+      180,
+      580,
+      4.75,
+      0.83,
+      17
+    ]
+  ],
+  "switches": [
+    [
+      "A",
+      335,
+      1
+    ]
+  ],
+  "gates": [
+    [
+      1005,
+      [
+        "A"
+      ]
+    ]
+  ],
+  "pulses": [
+    [
+      960,
+      2.62,
+      0.63,
+      1.18,
+      0.68
+    ]
+  ]
+}

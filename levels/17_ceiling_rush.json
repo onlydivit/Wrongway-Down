@@ -1,0 +1,89 @@
+{
+  "id": "ceiling_rush",
+  "title": "Ceiling Rush",
+  "chapter": "REFLEX",
+  "reward": 260,
+  "difficulty": "17 / REFLEX",
+  "hint": "React to the patrol, then cross the pulse while it reads PASS. Stop before READY.",
+  "spawn": [
+    130,
+    182,
+    -1
+  ],
+  "exit": [
+    1040,
+    160,
+    -1
+  ],
+  "walls": [],
+  "spikes": [
+    [
+      245,
+      100,
+      -1
+    ],
+    [
+      435,
+      100,
+      1
+    ],
+    [
+      625,
+      100,
+      -1
+    ],
+    [
+      815,
+      100,
+      1
+    ]
+  ],
+  "checkpoints": [
+    [
+      575,
+      1
+    ]
+  ],
+  "hazards": [
+    [
+      295,
+      180,
+      580,
+      4.35,
+      0.78,
+      17
+    ],
+    [
+      685,
+      180,
+      580,
+      4.6,
+      0.09,
+      17
+    ]
+  ],
+  "switches": [
+    [
+      "A",
+      385,
+      -1
+    ]
+  ],
+  "gates": [
+    [
+      1005,
+      [
+        "A"
+      ]
+    ]
+  ],
+  "pulses": [
+    [
+      930,
+      2.53,
+      0.62,
+      1.22,
+      0.02
+    ]
+  ]
+}

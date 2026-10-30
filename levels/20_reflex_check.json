@@ -1,0 +1,98 @@
+{
+  "id": "reflex_check",
+  "title": "Reflex Check",
+  "chapter": "REFLEX",
+  "reward": 290,
+  "difficulty": "20 / REFLEX",
+  "hint": "React to the patrol, then cross the pulse while it reads PASS. Stop before READY.",
+  "spawn": [
+    130,
+    578,
+    1
+  ],
+  "exit": [
+    1040,
+    532,
+    1
+  ],
+  "walls": [
+    [
+      235,
+      460,
+      90,
+      140
+    ],
+    [
+      630,
+      460,
+      90,
+      140
+    ]
+  ],
+  "spikes": [
+    [
+      430,
+      80,
+      -1
+    ],
+    [
+      825,
+      80,
+      -1
+    ]
+  ],
+  "checkpoints": [
+    [
+      560,
+      -1
+    ]
+  ],
+  "hazards": [
+    [
+      285,
+      180,
+      580,
+      4.125,
+      0.17,
+      17
+    ],
+    [
+      675,
+      180,
+      580,
+      4.375,
+      0.48,
+      17
+    ]
+  ],
+  "switches": [
+    [
+      "A",
+      360,
+      1
+    ],
+    [
+      "B",
+      760,
+      1
+    ]
+  ],
+  "gates": [
+    [
+      1005,
+      [
+        "A",
+        "B"
+      ]
+    ]
+  ],
+  "pulses": [
+    [
+      930,
+      2.395,
+      0.605,
+      1.28,
+      0.53
+    ]
+  ]
+}

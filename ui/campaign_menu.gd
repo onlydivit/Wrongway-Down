@@ -5,6 +5,7 @@ var overlay: Control
 var title: Label
 var description: Label
 var choices: VBoxContainer
+var scroll: ScrollContainer
 
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
@@ -28,7 +29,7 @@ func _ready() -> void:
 	title = _label(Vector2(296, 178), Vector2(560, 48), 32, Color("85f5d5"))
 	description = _label(Vector2(296, 232), Vector2(560, 60), 16, Color("dce8f3"))
 	description.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	var scroll := ScrollContainer.new()
+	scroll = ScrollContainer.new()
 	scroll.position = Vector2(306, 306)
 	scroll.size = Vector2(540, 298)
 	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
@@ -56,6 +57,7 @@ func show_page(heading: String, body: String) -> void:
 	for child in choices.get_children():
 		choices.remove_child(child)
 		child.queue_free()
+	scroll.scroll_vertical = 0
 
 func hide_page() -> void:
 	overlay.hide()
@@ -85,3 +87,48 @@ func add_level_grid() -> GridContainer:
 	grid.add_theme_constant_override("v_separation", 8)
 	choices.add_child(grid)
 	return grid
+
+func add_slider(label_text: String, value: float, callback: Callable) -> HSlider:
+	var row := HBoxContainer.new()
+	row.custom_minimum_size.y = 48
+	choices.add_child(row)
+	var label := Label.new()
+	label.custom_minimum_size.x = 145
+	label.text = "%s  %d%%" % [label_text, roundi(value * 100)]
+	row.add_child(label)
+	var slider := HSlider.new()
+	slider.min_value = 0
+	slider.max_value = 100
+	slider.step = 1
+	slider.value = value * 100
+	slider.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	slider.size_flags_vertical = Control.SIZE_SHRINK_CENTER
+	row.add_child(slider)
+	slider.value_changed.connect(func(amount: float):
+		label.text = "%s  %d%%" % [label_text, roundi(amount)]
+		callback.call(amount / 100.0)
+	)
+	return slider
+
+func add_alien_card(alien: Dictionary, action_text: String, callback: Callable, locked: bool) -> Button:
+	var row := HBoxContainer.new()
+	row.custom_minimum_size.y = 104
+	row.add_theme_constant_override("separation", 16)
+	choices.add_child(row)
+	var portrait = load("res://ui/alien_portrait.gd").new()
+	portrait.alien_id = alien.id
+	portrait.custom_minimum_size = Vector2(96, 100)
+	row.add_child(portrait)
+	var info := VBoxContainer.new()
+	info.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	row.add_child(info)
+	var label := Label.new()
+	label.text = alien.name
+	label.add_theme_font_size_override("font_size", 20)
+	label.add_theme_color_override("font_color", Color(alien.color))
+	info.add_child(label)
+	var detail := Label.new()
+	detail.text = alien.detail
+	detail.add_theme_font_size_override("font_size", 13)
+	info.add_child(detail)
+	return add_button(action_text, callback, locked, info)

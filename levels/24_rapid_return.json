@@ -1,0 +1,99 @@
+{
+  "id": "rapid_return",
+  "title": "Rapid Return",
+  "chapter": "PULSE",
+  "reward": 330,
+  "difficulty": "24 / PULSE",
+  "hint": "Two pulse cycles. Watch each warning, collect both switches, and keep your landing clear.",
+  "spawn": [
+    130,
+    578,
+    1
+  ],
+  "exit": [
+    1040,
+    160,
+    -1
+  ],
+  "walls": [
+    [
+      745,
+      460,
+      100,
+      140
+    ]
+  ],
+  "spikes": [
+    [
+      245,
+      125,
+      1
+    ],
+    [
+      495,
+      125,
+      -1
+    ]
+  ],
+  "checkpoints": [
+    [
+      445,
+      1
+    ]
+  ],
+  "hazards": [
+    [
+      325,
+      180,
+      580,
+      3.825,
+      0.69,
+      17
+    ],
+    [
+      795,
+      180,
+      580,
+      4.075,
+      0,
+      17
+    ]
+  ],
+  "switches": [
+    [
+      "A",
+      405,
+      -1
+    ],
+    [
+      "B",
+      675,
+      -1
+    ]
+  ],
+  "gates": [
+    [
+      1005,
+      [
+        "A",
+        "B"
+      ]
+    ]
+  ],
+  "pulses": [
+    [
+      555,
+      2.415,
+      0.585,
+      1.36,
+      0.83
+    ],
+    [
+      930,
+      2.215,
+      0.585,
+      1.36,
+      0.21
+    ]
+  ]
+}

@@ -1,7 +1,7 @@
 # Adding a room
 
 1. Copy a similar JSON from `levels/`, assign a new permanent `id`, and change title, hint and layout.
-2. Append `res://levels/11_your_room.json` to `levels/campaign.json`. Array order is play order; filenames are only a convention.
+2. Append the new path to `levels/campaign.json`. Array order is play order; filenames are only a convention.
 3. Run the Godot import and campaign test. Add a route to `tests/smoke.gd` and update its expected campaign count when adding shipped content.
 4. Play from the previous room, verify Continue and replay, and test every checkpoint's gravity. Record the new room's difficulty rationale in your development notes.
 
@@ -21,8 +21,12 @@ The viewport is 1152 × 720. Playable space is x40–1112, y160–600. Positive 
 | `hazards` | `[[x, top_y, bottom_y, period_seconds, phase, radius], ...]` | Vertical patrol. Phase is a cycle fraction, normally 0–1; period is a full out-and-back cycle. |
 | `switches` | `[["A", center_x, surface], ...]` | Touch to activate permanently until restart. IDs are local to a room. |
 | `gates` | `[[left_x, ["A", "B"]], ...]` | 16 px wide, full-height gate. Every listed switch must be active. |
+| `reward` | positive multiple of 10 | First completion grants this many Gravitos; later completions grant one tenth. |
+| `pulses` | `[[left_x, safe_s, warning_s, active_s, phase], ...]` | Vertical reaction barrier: PASS is safe, READY warns, STOP kills. |
 
 Use empty arrays for absent mechanics. Do not remove required fields. The catalog validates shapes, IDs and switch references; the author must still keep geometry inside the room, avoid spawn overlap, and provide a safe, reachable route. Gates must not block access to their own required switches.
+
+Reaction rooms should always give the player a visible warning interval and a safe place to wait. Shorten pulse openings or patrol cycles gradually; do not require a blind reaction after a camera transition.
 
 Example of a new easy room (save as a separate JSON file):
 

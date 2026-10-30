@@ -1,0 +1,107 @@
+{
+  "id": "pressure_line",
+  "title": "Pressure Line",
+  "chapter": "MASTERY",
+  "reward": 420,
+  "difficulty": "33 / MASTERY",
+  "hint": "Shorter openings, faster patrols. Brake before a warning and commit to the next safe crossing.",
+  "spawn": [
+    130,
+    182,
+    -1
+  ],
+  "exit": [
+    1040,
+    532,
+    1
+  ],
+  "walls": [],
+  "spikes": [
+    [
+      228,
+      80,
+      -1
+    ],
+    [
+      398,
+      80,
+      1
+    ],
+    [
+      568,
+      80,
+      -1
+    ],
+    [
+      738,
+      80,
+      1
+    ],
+    [
+      908,
+      70,
+      -1
+    ]
+  ],
+  "checkpoints": [
+    [
+      683,
+      -1
+    ]
+  ],
+  "hazards": [
+    [
+      268,
+      180,
+      580,
+      3.15,
+      0.86,
+      17
+    ],
+    [
+      608,
+      180,
+      580,
+      3.4,
+      0.17,
+      17
+    ]
+  ],
+  "switches": [
+    [
+      "A",
+      343,
+      -1
+    ],
+    [
+      "B",
+      683,
+      -1
+    ]
+  ],
+  "gates": [
+    [
+      1005,
+      [
+        "A",
+        "B"
+      ]
+    ]
+  ],
+  "pulses": [
+    [
+      443,
+      2.01,
+      0.54,
+      1.54,
+      0.82
+    ],
+    [
+      960,
+      1.81,
+      0.54,
+      1.54,
+      0.74
+    ]
+  ]
+}

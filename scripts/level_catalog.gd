@@ -57,6 +57,14 @@ func load_campaign(manifest_path := "res://levels/campaign.json") -> bool:
 				if not id in switch_ids:
 					return _fail(path + ": gate references missing switch")
 		ids.append(data.id)
+		var reward = data.get("reward", 100)
+		if not (reward is int or reward is float) or reward < 10 or fmod(float(reward), 10.0) != 0:
+			return _fail(path + ": reward must be a positive multiple of ten")
+		if not data.get("pulses", []) is Array:
+			return _fail(path + ": pulses must be an array")
+		for pulse in data.get("pulses", []):
+			if not _numbers(pulse, 5) or pulse[1] < 0.8 or pulse[2] < 0.4 or pulse[3] <= 0:
+				return _fail(path + ": invalid pulse timing")
 		levels.append(data)
 	return true
 

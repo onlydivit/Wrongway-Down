@@ -1,0 +1,84 @@
+{
+  "id": "blink_crossing",
+  "title": "Blink Crossing",
+  "chapter": "REFLEX",
+  "reward": 230,
+  "difficulty": "14 / REFLEX",
+  "hint": "React to the patrol, then cross the pulse while it reads PASS. Stop before READY.",
+  "spawn": [
+    130,
+    182,
+    -1
+  ],
+  "exit": [
+    1040,
+    160,
+    -1
+  ],
+  "walls": [
+    [
+      230,
+      160,
+      90,
+      140
+    ],
+    [
+      625,
+      160,
+      90,
+      140
+    ]
+  ],
+  "spikes": [
+    [
+      425,
+      80,
+      1
+    ],
+    [
+      820,
+      80,
+      1
+    ]
+  ],
+  "checkpoints": [
+    [
+      555,
+      1
+    ]
+  ],
+  "hazards": [
+    [
+      280,
+      180,
+      580,
+      4.575,
+      0.39,
+      17
+    ]
+  ],
+  "switches": [
+    [
+      "A",
+      355,
+      -1
+    ]
+  ],
+  "gates": [
+    [
+      1005,
+      [
+        "A"
+      ]
+    ]
+  ],
+  "pulses": [
+    [
+      930,
+      2.665,
+      0.635,
+      1.16,
+      0.51
+    ]
+  ]
+}

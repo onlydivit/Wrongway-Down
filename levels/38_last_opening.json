@@ -1,0 +1,105 @@
+{
+  "id": "last_opening",
+  "title": "Last Opening",
+  "chapter": "MASTERY",
+  "reward": 470,
+  "difficulty": "38 / MASTERY",
+  "hint": "Shorter openings, faster patrols. Brake before a warning and commit to the next safe crossing.",
+  "spawn": [
+    130,
+    182,
+    -1
+  ],
+  "exit": [
+    1040,
+    160,
+    -1
+  ],
+  "walls": [
+    [
+      222,
+      160,
+      90,
+      140
+    ],
+    [
+      617,
+      160,
+      90,
+      140
+    ]
+  ],
+  "spikes": [
+    [
+      417,
+      80,
+      1
+    ],
+    [
+      812,
+      80,
+      1
+    ]
+  ],
+  "checkpoints": [
+    [
+      547,
+      1
+    ]
+  ],
+  "hazards": [
+    [
+      272,
+      180,
+      580,
+      2.775,
+      0.51,
+      17
+    ],
+    [
+      662,
+      180,
+      580,
+      3.025,
+      0.82,
+      17
+    ]
+  ],
+  "switches": [
+    [
+      "A",
+      347,
+      -1
+    ],
+    [
+      "B",
+      747,
+      -1
+    ]
+  ],
+  "gates": [
+    [
+      1005,
+      [
+        "A",
+        "B"
+      ]
+    ]
+  ],
+  "pulses": [
+    [
+      472,
+      1.785,
+      0.515,
+      1.64,
+      0.37
+    ],
+    [
+      930,
+      1.585,
+      0.515,
+      1.64,
+      0.59
+    ]
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "id": "switch_sprint",
+  "title": "Switch Sprint",
+  "chapter": "PULSE",
+  "reward": 360,
+  "difficulty": "27 / PULSE",
+  "hint": "Two pulse cycles. Watch each warning, collect both switches, and keep your landing clear.",
+  "spawn": [
+    130,
+    578,
+    1
+  ],
+  "exit": [
+    1040,
+    160,
+    -1
+  ],
+  "walls": [],
+  "spikes": [
+    [
+      215,
+      80,
+      1
+    ],
+    [
+      385,
+      80,
+      -1
+    ],
+    [
+      555,
+      80,
+      1
+    ],
+    [
+      725,
+      80,
+      -1
+    ],
+    [
+      895,
+      70,
+      1
+    ]
+  ],
+  "checkpoints": [
+    [
+      670,
+      1
+    ]
+  ],
+  "hazards": [
+    [
+      255,
+      180,
+      580,
+      3.6,
+      0.08,
+      17
+    ],
+    [
+      595,
+      180,
+      580,
+      3.85,
+      0.39,
+      17
+    ]
+  ],
+  "switches": [
+    [
+      "A",
+      330,
+      1
+    ],
+    [
+      "B",
+      670,
+      1
+    ]
+  ],
+  "gates": [
+    [
+      1005,
+      [
+        "A",
+        "B"
+      ]
+    ]
+  ],
+  "pulses": [
+    [
+      430,
+      2.28,
+      0.57,
+      1.42,
+      0.16
+    ],
+    [
+      960,
+      2.08,
+      0.57,
+      1.42,
+      0.72
+    ]
+  ]
+}

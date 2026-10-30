@@ -1,0 +1,102 @@
+{
+  "id": "short_window",
+  "title": "Short Window",
+  "chapter": "MASTERY",
+  "reward": 440,
+  "difficulty": "35 / MASTERY",
+  "hint": "Shorter openings, faster patrols. Brake before a warning and commit to the next safe crossing.",
+  "spawn": [
+    130,
+    578,
+    1
+  ],
+  "exit": [
+    1040,
+    532,
+    1
+  ],
+  "walls": [],
+  "spikes": [
+    [
+      232,
+      100,
+      1
+    ],
+    [
+      422,
+      100,
+      -1
+    ],
+    [
+      612,
+      100,
+      1
+    ],
+    [
+      802,
+      100,
+      -1
+    ]
+  ],
+  "checkpoints": [
+    [
+      562,
+      -1
+    ]
+  ],
+  "hazards": [
+    [
+      282,
+      180,
+      580,
+      3,
+      0.12,
+      17
+    ],
+    [
+      672,
+      180,
+      580,
+      3.25,
+      0.43,
+      17
+    ]
+  ],
+  "switches": [
+    [
+      "A",
+      372,
+      1
+    ],
+    [
+      "B",
+      752,
+      1
+    ]
+  ],
+  "gates": [
+    [
+      1005,
+      [
+        "A",
+        "B"
+      ]
+    ]
+  ],
+  "pulses": [
+    [
+      472,
+      1.92,
+      0.53,
+      1.58,
+      0.04
+    ],
+    [
+      930,
+      1.72,
+      0.53,
+      1.58,
+      0.08
+    ]
+  ]
+}

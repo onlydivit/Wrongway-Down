@@ -1,0 +1,101 @@
+{
+  "id": "upper_instinct",
+  "title": "Upper Instinct",
+  "chapter": "REFLEX",
+  "reward": 220,
+  "difficulty": "13 / REFLEX",
+  "hint": "React to the patrol, then cross the pulse while it reads PASS. Stop before READY.",
+  "spawn": [
+    130,
+    182,
+    -1
+  ],
+  "exit": [
+    1040,
+    160,
+    -1
+  ],
+  "walls": [
+    [
+      250,
+      160,
+      75,
+      140
+    ],
+    [
+      460,
+      460,
+      75,
+      140
+    ],
+    [
+      660,
+      160,
+      75,
+      140
+    ],
+    [
+      860,
+      460,
+      75,
+      140
+    ]
+  ],
+  "spikes": [
+    [
+      350,
+      25,
+      -1
+    ],
+    [
+      550,
+      25,
+      1
+    ],
+    [
+      750,
+      25,
+      -1
+    ]
+  ],
+  "checkpoints": [
+    [
+      610,
+      1
+    ]
+  ],
+  "hazards": [
+    [
+      330,
+      180,
+      580,
+      4.65,
+      0.26,
+      17
+    ]
+  ],
+  "switches": [
+    [
+      "A",
+      410,
+      -1
+    ]
+  ],
+  "gates": [
+    [
+      1005,
+      [
+        "A"
+      ]
+    ]
+  ],
+  "pulses": [
+    [
+      930,
+      2.71,
+      0.64,
+      1.14,
+      0.34
+    ]
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "id": "pulse_runner",
+  "title": "Pulse Runner",
+  "chapter": "REFLEX",
+  "reward": 270,
+  "difficulty": "18 / REFLEX",
+  "hint": "React to the patrol, then cross the pulse while it reads PASS. Stop before READY.",
+  "spawn": [
+    130,
+    182,
+    -1
+  ],
+  "exit": [
+    1040,
+    532,
+    1
+  ],
+  "walls": [
+    [
+      755,
+      160,
+      100,
+      140
+    ]
+  ],
+  "spikes": [
+    [
+      255,
+      125,
+      -1
+    ],
+    [
+      505,
+      125,
+      1
+    ]
+  ],
+  "checkpoints": [
+    [
+      455,
+      -1
+    ]
+  ],
+  "hazards": [
+    [
+      335,
+      180,
+      580,
+      4.275,
+      0.91,
+      17
+    ],
+    [
+      805,
+      180,
+      580,
+      4.525,
+      0.22,
+      17
+    ]
+  ],
+  "switches": [
+    [
+      "A",
+      415,
+      1
+    ],
+    [
+      "B",
+      685,
+      1
+    ]
+  ],
+  "gates": [
+    [
+      1005,
+      [
+        "A",
+        "B"
+      ]
+    ]
+  ],
+  "pulses": [
+    [
+      930,
+      2.485,
+      0.615,
+      1.24,
+      0.19
+    ]
+  ]
+}

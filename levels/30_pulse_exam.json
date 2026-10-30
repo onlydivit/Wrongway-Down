@@ -1,0 +1,99 @@
+{
+  "id": "pulse_exam",
+  "title": "Pulse Exam",
+  "chapter": "PULSE",
+  "reward": 390,
+  "difficulty": "30 / PULSE",
+  "hint": "Two pulse cycles. Watch each warning, collect both switches, and keep your landing clear.",
+  "spawn": [
+    130,
+    182,
+    -1
+  ],
+  "exit": [
+    1040,
+    532,
+    1
+  ],
+  "walls": [
+    [
+      758,
+      160,
+      100,
+      140
+    ]
+  ],
+  "spikes": [
+    [
+      258,
+      125,
+      -1
+    ],
+    [
+      508,
+      125,
+      1
+    ]
+  ],
+  "checkpoints": [
+    [
+      458,
+      -1
+    ]
+  ],
+  "hazards": [
+    [
+      338,
+      180,
+      580,
+      3.375,
+      0.47,
+      17
+    ],
+    [
+      808,
+      180,
+      580,
+      3.625,
+      0.78,
+      17
+    ]
+  ],
+  "switches": [
+    [
+      "A",
+      418,
+      1
+    ],
+    [
+      "B",
+      688,
+      1
+    ]
+  ],
+  "gates": [
+    [
+      1005,
+      [
+        "A",
+        "B"
+      ]
+    ]
+  ],
+  "pulses": [
+    [
+      568,
+      2.145,
+      0.555,
+      1.48,
+      0.49
+    ],
+    [
+      930,
+      1.945,
+      0.555,
+      1.48,
+      0.23
+    ]
+  ]
+}

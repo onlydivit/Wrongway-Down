@@ -1,6 +1,6 @@
 # Wrongway Down
 
-A Godot 4.6 gravity-flipping puzzle platformer. Chapter 01: Foundations contains ten progressively more demanding rooms, from safe flips to moving patrols and switch-controlled gates. The difficulty leaves room for more advanced chapters later.
+A Godot 4.6 gravity-flipping puzzle platformer with 40 progressively more demanding rooms. The campaign moves from safe flips and patrols into timed reaction barriers, shorter openings, and combined switch challenges.
 
 ## Play
 
@@ -16,7 +16,7 @@ Open project.godot in Godot 4.6 and press F5. Choose Play or Continue. Choose Le
 
 There is no jump or midair flip. Pink spikes and patrols cause respawn. Amber flags save position and gravity. Violet lettered switches open matching gates; every listed letter is required. Switches stay active after death but reset on restart. Mint doors complete rooms.
 
-## Campaign
+## Campaign and Gravitos
 
 1. First Flip: safe introduction and ceiling exit.
 2. Safe Landing: first spikes and a forgiving ceiling route.
@@ -28,8 +28,19 @@ There is no jump or midair flip. Pink spikes and patrols cause respawn. Amber fl
 8. Upper Ground: four crossings and a ceiling checkpoint.
 9. Two Keys: two switches and two patrols.
 10. Field Exam: combine the chapter's mechanics.
+11-20. Reflex: introduce visible pulse barriers and faster patrol reads.
+21-30. Pulse: combine two barriers with route and switch choices.
+31-40. Mastery: shortest safe windows and the full set of established mechanics.
 
-Movement speed stays constant; difficulty grows through routing and combinations. There is no time limit. Human playtesting is still needed to confirm the intended curve.
+Movement speed stays constant; difficulty grows through routing, reaction timing and combinations. There is no time limit. Human playtesting is still needed to confirm the intended curve.
+
+Each room rewards Gravitos. The first clear pays the listed reward; replaying a room pays one tenth. Previous progress is migrated on first launch, so already-completed rooms receive their original first-clear reward once. The main menu and level selection show your balance and the next reward.
+
+## Shop and Sound
+
+The Alien Shop unlocks six cosmetic aliens: Sprout, Orbix, Jellyfin, Emberling, Luna Moth and Nebula Crown. Characters share exactly the same hitbox and movement; the choice is visual. Purchases, ownership and equipped alien are saved.
+
+Sound Settings provides master, music and effect sliders plus mute. Settings apply immediately and save between sessions. The game includes a quiet procedural ambient loop and synthesized effects.
 
 ## Documentation and extension
 

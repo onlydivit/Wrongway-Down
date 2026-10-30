@@ -1,0 +1,81 @@
+{
+  "id": "wake_signal",
+  "title": "Wake Signal",
+  "chapter": "REFLEX",
+  "reward": 200,
+  "difficulty": "11 / REFLEX",
+  "hint": "Pulse barriers: PASS is safe, READY warns, STOP kills. Watch the next opening.",
+  "spawn": [
+    130,
+    578,
+    1
+  ],
+  "exit": [
+    1040,
+    532,
+    1
+  ],
+  "walls": [],
+  "spikes": [
+    [
+      240,
+      100,
+      1
+    ],
+    [
+      430,
+      100,
+      -1
+    ],
+    [
+      620,
+      100,
+      1
+    ],
+    [
+      810,
+      100,
+      -1
+    ]
+  ],
+  "checkpoints": [
+    [
+      570,
+      -1
+    ]
+  ],
+  "hazards": [
+    [
+      290,
+      180,
+      580,
+      4.8,
+      0,
+      17
+    ]
+  ],
+  "switches": [
+    [
+      "A",
+      380,
+      1
+    ]
+  ],
+  "gates": [
+    [
+      1005,
+      [
+        "A"
+      ]
+    ]
+  ],
+  "pulses": [
+    [
+      930,
+      2.8,
+      0.65,
+      1.1,
+      0
+    ]
+  ]
+}

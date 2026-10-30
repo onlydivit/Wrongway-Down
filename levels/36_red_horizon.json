@@ -1,0 +1,99 @@
+{
+  "id": "red_horizon",
+  "title": "Red Horizon",
+  "chapter": "MASTERY",
+  "reward": 450,
+  "difficulty": "36 / MASTERY",
+  "hint": "Shorter openings, faster patrols. Brake before a warning and commit to the next safe crossing.",
+  "spawn": [
+    130,
+    578,
+    1
+  ],
+  "exit": [
+    1040,
+    160,
+    -1
+  ],
+  "walls": [
+    [
+      742,
+      460,
+      100,
+      140
+    ]
+  ],
+  "spikes": [
+    [
+      242,
+      125,
+      1
+    ],
+    [
+      492,
+      125,
+      -1
+    ]
+  ],
+  "checkpoints": [
+    [
+      442,
+      1
+    ]
+  ],
+  "hazards": [
+    [
+      322,
+      180,
+      580,
+      2.925,
+      0.25,
+      17
+    ],
+    [
+      792,
+      180,
+      580,
+      3.175,
+      0.56,
+      17
+    ]
+  ],
+  "switches": [
+    [
+      "A",
+      402,
+      -1
+    ],
+    [
+      "B",
+      672,
+      -1
+    ]
+  ],
+  "gates": [
+    [
+      1005,
+      [
+        "A",
+        "B"
+      ]
+    ]
+  ],
+  "pulses": [
+    [
+      552,
+      1.875,
+      0.525,
+      1.6,
+      0.15
+    ],
+    [
+      930,
+      1.675,
+      0.525,
+      1.6,
+      0.25
+    ]
+  ]
+}

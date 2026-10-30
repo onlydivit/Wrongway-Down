@@ -1,0 +1,105 @@
+{
+  "id": "twin_signals",
+  "title": "Twin Signals",
+  "chapter": "MASTERY",
+  "reward": 410,
+  "difficulty": "32 / MASTERY",
+  "hint": "Shorter openings, faster patrols. Brake before a warning and commit to the next safe crossing.",
+  "spawn": [
+    130,
+    578,
+    1
+  ],
+  "exit": [
+    1040,
+    532,
+    1
+  ],
+  "walls": [
+    [
+      238,
+      460,
+      90,
+      140
+    ],
+    [
+      633,
+      460,
+      90,
+      140
+    ]
+  ],
+  "spikes": [
+    [
+      433,
+      80,
+      -1
+    ],
+    [
+      828,
+      80,
+      -1
+    ]
+  ],
+  "checkpoints": [
+    [
+      563,
+      -1
+    ]
+  ],
+  "hazards": [
+    [
+      288,
+      180,
+      580,
+      3.225,
+      0.73,
+      17
+    ],
+    [
+      678,
+      180,
+      580,
+      3.475,
+      0.04,
+      17
+    ]
+  ],
+  "switches": [
+    [
+      "A",
+      363,
+      1
+    ],
+    [
+      "B",
+      763,
+      1
+    ]
+  ],
+  "gates": [
+    [
+      1005,
+      [
+        "A",
+        "B"
+      ]
+    ]
+  ],
+  "pulses": [
+    [
+      488,
+      2.055,
+      0.545,
+      1.52,
+      0.71
+    ],
+    [
+      930,
+      1.855,
+      0.545,
+      1.52,
+      0.57
+    ]
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "quick_step",
+  "title": "Quick Step",
+  "chapter": "REFLEX",
+  "reward": 210,
+  "difficulty": "12 / REFLEX",
+  "hint": "React to the patrol, then cross the pulse while it reads PASS. Stop before READY.",
+  "spawn": [
+    130,
+    578,
+    1
+  ],
+  "exit": [
+    1040,
+    160,
+    -1
+  ],
+  "walls": [
+    [
+      750,
+      460,
+      100,
+      140
+    ]
+  ],
+  "spikes": [
+    [
+      250,
+      125,
+      1
+    ],
+    [
+      500,
+      125,
+      -1
+    ]
+  ],
+  "checkpoints": [
+    [
+      450,
+      1
+    ]
+  ],
+  "hazards": [
+    [
+      330,
+      180,
+      580,
+      4.725,
+      0.13,
+      17
+    ]
+  ],
+  "switches": [
+    [
+      "A",
+      410,
+      -1
+    ]
+  ],
+  "gates": [
+    [
+      1005,
+      [
+        "A"
+      ]
+    ]
+  ],
+  "pulses": [
+    [
+      930,
+      2.755,
+      0.645,
+      1.12,
+      0.17
+    ]
+  ]
+}

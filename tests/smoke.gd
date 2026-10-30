@@ -70,7 +70,7 @@ func _run() -> void:
 	root.add_child(game)
 	await frames(2)
 	game.progress.completed.clear()
-	check(game.catalog.levels.size() == 10, "Ten campaign levels load")
+	check(game.catalog.levels.size() >= 10, "Campaign loads its foundation rooms")
 	check(paused and game.state == "menu", "Menu pauses the world")
 	check(not game.progress.is_unlocked(1, game.catalog.levels), "New saves lock later levels")
 	game.start_level(1)
@@ -96,7 +96,7 @@ func _run() -> void:
 			await settle()
 		await move_to(1060)
 		await frames(3)
-		check(game.state == ("ending" if index == 9 else "complete"), "Level %02d completed by movement and flips" % (index + 1))
+		check(game.state == ("ending" if index == game.catalog.levels.size() - 1 else "complete"), "Level %02d completed by movement and flips" % (index + 1))
 		check(game.deaths == initial_deaths, "Level %02d route is survivable without deaths" % (index + 1))
 		check(game.catalog.levels[index].id in game.progress.completed, "Level %02d completion saved" % (index + 1))
 		if game.state not in ["complete", "ending"]:

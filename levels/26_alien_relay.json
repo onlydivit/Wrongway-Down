@@ -1,0 +1,105 @@
+{
+  "id": "alien_relay",
+  "title": "Alien Relay",
+  "chapter": "PULSE",
+  "reward": 350,
+  "difficulty": "26 / PULSE",
+  "hint": "Two pulse cycles. Watch each warning, collect both switches, and keep your landing clear.",
+  "spawn": [
+    130,
+    182,
+    -1
+  ],
+  "exit": [
+    1040,
+    160,
+    -1
+  ],
+  "walls": [
+    [
+      225,
+      160,
+      90,
+      140
+    ],
+    [
+      620,
+      160,
+      90,
+      140
+    ]
+  ],
+  "spikes": [
+    [
+      420,
+      80,
+      1
+    ],
+    [
+      815,
+      80,
+      1
+    ]
+  ],
+  "checkpoints": [
+    [
+      550,
+      1
+    ]
+  ],
+  "hazards": [
+    [
+      275,
+      180,
+      580,
+      3.675,
+      0.95,
+      17
+    ],
+    [
+      665,
+      180,
+      580,
+      3.925,
+      0.26,
+      17
+    ]
+  ],
+  "switches": [
+    [
+      "A",
+      350,
+      -1
+    ],
+    [
+      "B",
+      750,
+      -1
+    ]
+  ],
+  "gates": [
+    [
+      1005,
+      [
+        "A",
+        "B"
+      ]
+    ]
+  ],
+  "pulses": [
+    [
+      475,
+      2.325,
+      0.575,
+      1.4,
+      0.05
+    ],
+    [
+      930,
+      2.125,
+      0.575,
+      1.4,
+      0.55
+    ]
+  ]
+}
