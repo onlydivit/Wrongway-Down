@@ -2,6 +2,16 @@
 
 A Godot 4.6 gravity-flipping puzzle platformer with 40 progressively more demanding rooms. The campaign moves from safe flips and patrols into timed reaction barriers, shorter openings, and combined switch challenges.
 
+## Gameplay video
+
+[![Wrongway Down gameplay preview](media/gameplay-preview.jpg)](media/gameplay.mp4)
+
+[Watch the 23-second gameplay video](media/gameplay.mp4): a run through rooms 1–3 with movement, gravity flips, checkpoints and Gravitos rewards.
+
+[![Mastery rooms gameplay preview](media/harder-gameplay-preview.jpg)](media/harder-gameplay.mp4)
+
+[Watch the 39-second harder-level video](media/harder-gameplay.mp4): rooms 31 (Fast Orbit) and 40 (Gravity Master), featuring faster patrols, two pulse barriers, switches and gates.
+
 ## Play
 
 Open project.godot in Godot 4.6 and press F5. Choose Play or Continue. Choose Level shows unlocked and completed rooms; completing a room unlocks the next. Replaying does not erase progress.
